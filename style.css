@@ -1,0 +1,411 @@
+/* Base styling */
+body {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #e7f2f8;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+
+.page-container{
+    width: 95%;
+    margin: auto;
+}
+
+.title{
+    text-align: left;
+    background-color: #005a9e;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.highlight {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.highlight-2 {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.highlight-2 img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.highlight-2 .right{
+    padding-left: 20px;
+}
+
+
+
+/* ***** */
+
+
+/** Header **/
+header {
+    background-color: #005a9e;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style the label (hamburger icon) */
+.hamburger-icon {
+    display: none; 
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    letter-spacing: 1.1px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* fset position relative to organize the dropdown using absolute */
+nav > ul > li {
+position: relative; 
+display: inline-block;
+}
+
+nav .button{
+    background-color: rgb(5, 190, 5);
+    border-radius: 10px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px; 
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* dropdown on hover */
+nav > ul > li:hover .dropdown-content {
+display: block;
+}
+
+/* Style for dropdown items */
+.dropdown-content li {
+display: block;
+}
+
+.dropdown-content li a {
+padding: 10px;
+text-decoration: none;
+color: black;
+display: block;
+}
+
+.dropdown-content li a:hover {
+background-color: #ddd;
+}
+
+nav a:hover {
+    background-color: #033e6b;
+}
+
+/* ****** */
+
+/* div */
+#div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #033e6b;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#div p {
+    text-align: justify;
+    padding: 10px 50px 10px 10px;
+    font-size: 2.5rem; 
+    color: white;
+    line-height: 1.8;
+}
+
+#div strong{
+    background-color:#005a9e;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Lobster', sans-serif;
+}
+
+#div img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.Welcome {
+    font-size: 3rem;
+    color: #005a9e; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px #aaa;
+    margin: 0.5em 0; 
+}
+
+/* ***** */
+
+
+/* Park Map */
+#park-map img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+/* ***** */
+
+/* container cards styling */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlight .content {
+    padding: 15px;
+}
+
+/* Event section styling */
+.events-section {
+    background-color: #e4f0f5;
+    padding: 20px 0;
+}
+
+.events-section h2 {
+    margin: 10px 0 20px 0;
+    color: #005a9e;
+}
+
+.card{
+    display: block;
+    margin-bottom: 50px;
+}
+
+/* **** */
+
+/* FAQ */
+.faq-container{
+    padding: 0 0 0 20px;
+}
+
+.faq-container .more-faqs {
+    display: none;
+}
+
+.load-more-toggle {
+    display: none; 
+}
+
+.load-more-toggle:checked + .more-faqs {
+    display: block; 
+}
+
+.load-more-button {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+
+/* **** */
+
+/* Footer styling */
+footer.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer.site-footer a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* **** */
+
+/* Cards */
+.ticket-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ticket-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 49%;
+}
+
+.ticket-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.ticket-card .content {
+    padding: 15px;
+}
+
+.ticket-card h2 {
+    margin-top: 0;
+}
+
+/* **** */
+
+/* third page */
+.guide-image{
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0 0 20px 20px;
+} 
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    #div p {
+        font-size: 1.25rem; 
+        line-height: 2.5rem;
+    }
+
+    .ticket-row {
+        flex-direction: column;
+    }
+
+    .ticket-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hamburger-icon {
+        display: block;
+
+    }
+
+    /* Hide the navigation menu by default */
+    nav {
+        display: none;
+    }
+
+    /* Show the menu when the hidden checkbox is checked */
+    .menu-toggle:checked + .hamburger-icon + nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .mian .right{
+        display: none;
+    }
+
+    #div img{
+        display: none;
+    }
+
+    #div p {
+        font-size: 1.25rem;
+    }
+
+    #div strong{
+        background-color:#033e6b;
+    }
+
+    .ticket-row {
+        flex-direction: column;
+    }
+
+    .ticket-card {
+        width: 100%;
+    }    
+}
+
+
